@@ -5,7 +5,7 @@ exports.handler = function(event, context, callback) {
     `;
     let body;
 
-    if (event.boy) {
+    if (event.body) {
         body = JSON.parse(event.body);
     } else {
         body = {};
@@ -21,5 +21,4 @@ exports.handler = function(event, context, callback) {
             statusCode: 401
         })
     }
-    
 }
